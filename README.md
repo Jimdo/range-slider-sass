@@ -5,7 +5,17 @@ This is a sass snippet to style the beloved input type="range" a little easier.
 ##Why
 When it comes to styling an input[type="range"] the fix is not to vendor-prefix the properties but to vendor-prefix the selectors. 
 
-This snipper should help provide a little 
+This snippet should provide an easier approach. 
+
+##How To 
+
+@include the range.sass in your project.
+
+Adjust the variables to match your project. 
+
+use the mixin "input-type-range"
+
+
 ##Demo Setup
 
 You need node & npm for this, if you don't have it just follow the steps [here](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)

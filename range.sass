@@ -1,28 +1,31 @@
-$track-color: #2E2E2E
-$thumb-color: #0097f2
+// The draghandle
+$thumb-color: #0097f2 !default
 
+$thumb-radius: 100% !default
+$thumb-height: 15px !default
+$thumb-width: 15px !default
 
-//
-$thumb-radius: 100%
-$thumb-height: 15px
-$thumb-width: 15px
-$thumb-shadow-size: 0
-$thumb-shadow-blur: 1px
-$thumb-shadow-color: rgba(0,0,0,.0)
-$thumb-border-width: 0
-$thumb-border-color: black
+$thumb-border-width: 0 !default
+$thumb-border-color: black !default
 
-$track-width: auto
-$track-height: 8px
+$thumb-shadow-size: 0 !default
+$thumb-shadow-blur: 1px !default
+$thumb-shadow-color: rgba(0,0,0,.0) !default
 
-$track-border-width: 1px
-$track-border-color: black
+// The range
+$track-color: #2E2E2E !default
 
-$track-shadow-size: 2px
-$track-shadow-blur: 2px
-$track-shadow-color: rgba(0,0,0,.0)
+$track-radius: 4px !default
+$track-width: auto !default
+$track-height: 8px !default
 
-$track-radius: 4px
+$track-border-width: 1px !default
+$track-border-color: black !default
+
+$track-shadow-size: 2px !default
+$track-shadow-blur: 2px !default
+$track-shadow-color: rgba(0,0,0,.0) !default
+
 
 =shadow($shadow-size,$shadow-blur,$shadow-color)
   box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0px 0px $shadow-size lighten($shadow-color,5%)
@@ -45,71 +48,72 @@ $track-radius: 4px
   cursor: pointer
 
 
-input[type=range]
-  -webkit-appearance: none
-  background: transparent
-  margin: $thumb-height/2 0
-  width: $track-width
-
-  &:focus
-    outline: none
-
-
-  &::-webkit-slider-runnable-track
-    +track
-    +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
-    background: $track-color
-    border-radius: $track-radius
-    border: $track-border-width solid $track-border-color
-
-
-  &::-webkit-slider-thumb
-    +thumb
+=input-type-range
+  input[type=range]
     -webkit-appearance: none
-    margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2)
-
-
-  &:focus::-webkit-slider-runnable-track
-    background: $track-color
-
-
-  &::-moz-range-track
-    +track
-    +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
-    background: $track-color
-    border-radius: $track-radius
-     border: $track-border-width solid $track-border-color
-
-  &::-moz-range-thumb
-     +thumb
-
-
-  &::-ms-track
-    +track
     background: transparent
-    border-color: transparent
-    border-width: $thumb-width 0
-    color: transparent
+    margin: $thumb-height/2 0
+    width: $track-width
+
+    &:focus
+      outline: none
 
 
-  &::-ms-fill-lower
-    background: $track-color
-    border: $track-border-width solid $track-border-color
-    border-radius: $track-radius*2
-    +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
+    &::-webkit-slider-runnable-track
+      +track
+      +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
+      background: $track-color
+      border-radius: $track-radius
+      border: $track-border-width solid $track-border-color
 
-  &::-ms-fill-upper
-    background: $track-color
-    border: $track-border-width solid $track-border-color
-    border-radius: $track-radius*2
-    +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
 
-  &::-ms-thumb
-    +thumb
+    &::-webkit-slider-thumb
+      +thumb
+      -webkit-appearance: none
+      margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2)
 
-  &:focus::-ms-fill-lower
-    background: $track-color
 
-  &:focus::-ms-fill-upper
-    background: $track-color
+    &:focus::-webkit-slider-runnable-track
+      background: $track-color
+
+
+    &::-moz-range-track
+      +track
+      +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
+      background: $track-color
+      border-radius: $track-radius
+       border: $track-border-width solid $track-border-color
+
+    &::-moz-range-thumb
+       +thumb
+
+
+    &::-ms-track
+      +track
+      background: transparent
+      border-color: transparent
+      border-width: $thumb-width 0
+      color: transparent
+
+
+    &::-ms-fill-lower
+      background: $track-color
+      border: $track-border-width solid $track-border-color
+      border-radius: $track-radius*2
+      +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
+
+    &::-ms-fill-upper
+      background: $track-color
+      border: $track-border-width solid $track-border-color
+      border-radius: $track-radius*2
+      +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
+
+    &::-ms-thumb
+      +thumb
+
+    &:focus::-ms-fill-lower
+      background: $track-color
+
+    &:focus::-ms-fill-upper
+      background: $track-color
 
