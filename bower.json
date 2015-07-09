@@ -18,6 +18,7 @@
     "package.json",
     "webpack.config.js",
     "entry.js",
-    "demo.sass"
+    "demo.sass",
+    "demo.js"
   ]
 }
