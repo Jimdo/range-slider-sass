@@ -1,0 +1,23 @@
+{
+  "name": "range-slider-sass",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Jimdo/range-slider-sass",
+  "authors": [
+    "Lasse Diercks <lasse@jimdo.com>"
+  ],
+  "description": "A sass snippet for styling input type range",
+  "main": "range.sass",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html",
+    "package.json",
+    "webpack.config.js",
+    "entry.js",
+    "demo.sass"
+  ]
+}
