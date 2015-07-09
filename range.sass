@@ -1,25 +1,28 @@
-$track-color: #424242
-$thumb-color: #555bc8
+$track-color: #2E2E2E
+$thumb-color: #0097f2
 
-$thumb-radius: 8px
-$thumb-height: 30px
-$thumb-width: 30px
-$thumb-shadow-size: 1px
+
+//
+$thumb-radius: 100%
+$thumb-height: 15px
+$thumb-width: 15px
+$thumb-shadow-size: 0
 $thumb-shadow-blur: 1px
-$thumb-shadow-color: #111
-$thumb-border-width: 1px
-$thumb-border-color: white
+$thumb-shadow-color: rgba(0,0,0,.0)
+$thumb-border-width: 0
+$thumb-border-color: black
 
 $track-width: auto
-$track-height: 10px
-$track-shadow-size: 2px
-$track-shadow-blur: 2px
-$track-shadow-color: #222
+$track-height: 8px
+
 $track-border-width: 1px
 $track-border-color: black
 
-$track-radius: 5px
-$contrast: 5%
+$track-shadow-size: 2px
+$track-shadow-blur: 2px
+$track-shadow-color: rgba(0,0,0,.0)
+
+$track-radius: 4px
 
 =shadow($shadow-size,$shadow-blur,$shadow-color)
   box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0px 0px $shadow-size lighten($shadow-color,5%)
@@ -44,6 +47,7 @@ $contrast: 5%
 
 input[type=range]
   -webkit-appearance: none
+  background: transparent
   margin: $thumb-height/2 0
   width: $track-width
 
@@ -66,7 +70,7 @@ input[type=range]
 
 
   &:focus::-webkit-slider-runnable-track
-    background: lighten($track-color, $contrast)
+    background: $track-color
 
 
   &::-moz-range-track
@@ -89,7 +93,7 @@ input[type=range]
 
 
   &::-ms-fill-lower
-    background: darken($track-color, $contrast)
+    background: $track-color
     border: $track-border-width solid $track-border-color
     border-radius: $track-radius*2
     +shadow($track-shadow-size,$track-shadow-blur,$track-shadow-color)
@@ -107,5 +111,5 @@ input[type=range]
     background: $track-color
 
   &:focus::-ms-fill-upper
-    background: lighten($track-color, $contrast)
+    background: $track-color
 
