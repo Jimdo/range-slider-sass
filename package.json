@@ -1,0 +1,38 @@
+{
+  "name": "range-slider-sass",
+  "version": "0.0.1",
+  "description": "A sass snippet for styling input type range",
+  "main": "entry.js",
+  "scripts": {
+    "test": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lassediercks/range-slider-sass"
+  },
+  "dependencies":{
+    "bower": "^1.4.1",
+    "css-loader": "^0.10.1",
+    "json-loader": "^0.5.2",
+    "node-libs-browser": "^0.5.2",
+    "sass-loader": "^0.6.0",
+    "style-loader": "^0.10.2",
+    "webpack": "^1.10.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "keywords": [
+    "sass",
+    "input",
+    "type",
+    "range",
+    "html5",
+    "preprocessor",
+    "sass"
+  ],
+  "author": "Lasse Diercks @lassediercks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lassediercks/range-slider-sass/issues"
+  },
+  "homepage": "https://github.com/lassediercks/range-slider-sass"
+}
