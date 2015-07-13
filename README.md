@@ -13,7 +13,7 @@ This snippet should provide an easier approach.
 
 Adjust the variables to match your project. 
 
-use the mixin "input-type-range"
+use the mixin "input-type-range" on your input[type=range]
 
 
 ##Demo Setup
