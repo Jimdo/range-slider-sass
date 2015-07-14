@@ -1,4 +1,4 @@
-#Input type="range" sass
+#Input type="range" sass mixin
 
 This is a sass snippet to style the beloved input type="range" a little easier.
 
@@ -34,11 +34,11 @@ http://localhost:8080/webpack-dev-server/ is the place to go after that.
 
 ##Contributing
 
-Issues and pull requests are abslutely welcome!
+Issues and pull requests are absolutely welcome!
 
 ##Credits
 
-When you like this give [Daniel Stern](https://twitter.com/danieljackstern) a follow as he has done the following things to improve range-css styling:
+When you like this please give [Daniel Stern](https://twitter.com/danieljackstern) a follow as he has done the awesome things to improve range-css styling:
  * [range.css](https://github.com/danielstern/range.css)
  * [css-tricks article ](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
  * [neat range css generator](http://danielstern.ca/range.css/#/)
