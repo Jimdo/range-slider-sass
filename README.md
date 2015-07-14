@@ -38,7 +38,7 @@ Issues and pull requests are absolutely welcome!
 
 ##Credits
 
-When you like this please give [Daniel Stern](https://twitter.com/danieljackstern) a follow as he has done the awesome things to improve range-css styling:
+When you like this please give [Daniel Stern](https://twitter.com/danieljackstern) a follow as he has done awesome things to improve range-css styling:
  * [range.css](https://github.com/danielstern/range.css)
  * [css-tricks article ](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
  * [neat range css generator](http://danielstern.ca/range.css/#/)
