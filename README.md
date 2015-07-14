@@ -2,6 +2,8 @@
 
 This is a sass snippet to style the beloved input type="range" a little easier.
 
+[demo](http://jimdo.github.io/range-slider-sass/)
+
 ##Why
 When it comes to styling an input[type="range"] the fix is not to vendor-prefix the properties but to vendor-prefix the selectors. 
 
@@ -30,9 +32,17 @@ You need node & npm for this, if you don't have it just follow the steps [here](
 http://localhost:8080/webpack-dev-server/ is the place to go after that.
 
 
+##Contributing
+
+Issues and pull requests are abslutely welcome!
+
 ##Credits
 
-This is inspired by [Daniel Stern(twitter)](https://twitter.com/danieljackstern) who wrote [this css-tricks article ](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/) and also a [neat range css generator](http://danielstern.ca/range.css/#/)
+When you like this give [Daniel Stern](https://twitter.com/danieljackstern) a follow as he has done the following things to improve range-css styling:
+ * [range.css](https://github.com/danielstern/range.css)
+ * [css-tricks article ](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
+ * [neat range css generator](http://danielstern.ca/range.css/#/)
+
 
 ##License
 
