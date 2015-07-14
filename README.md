@@ -30,8 +30,9 @@ You need node & npm for this, if you don't have it just follow the steps [here](
 http://localhost:8080/webpack-dev-server/ is the place to go after that.
 
 
+##Credits
 
-inspired by https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
+This is inspired by [Daniel Stern(twitter)](https://twitter.com/danieljackstern) who wrote [this css-tricks article ](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/) and also a [neat range css generator](http://danielstern.ca/range.css/#/)
 
 ##License
 
