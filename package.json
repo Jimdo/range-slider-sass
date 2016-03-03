@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/lassediercks/range-slider-sass"
   },
-  "dependencies":{
+  "devDependencies":{
     "bower": "^1.4.1",
     "css-loader": "^0.10.1",
     "json-loader": "^0.5.2",
