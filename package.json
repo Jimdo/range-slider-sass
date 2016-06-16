@@ -1,6 +1,6 @@
 {
   "name": "range-slider-sass",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "A sass snippet for styling input type range",
   "main": "range.sass",
   "scripts": {
