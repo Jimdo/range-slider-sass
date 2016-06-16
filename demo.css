@@ -10,12 +10,12 @@ body {
   body input[type=range] {
     -webkit-appearance: none;
     background: transparent;
-    width: auto; }
+    width: 300px; }
     body input[type=range]:focus {
       outline: none; }
     body input[type=range]::-webkit-slider-runnable-track {
-      width: auto;
-      height: 8px;
+      width: 300px;
+      height: 5px;
       cursor: pointer;
       animate: 0.2s;
       box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13, 13, 13, 0);
@@ -31,12 +31,12 @@ body {
       background: fuchsia;
       cursor: pointer;
       -webkit-appearance: none;
-      margin-top: -4.5px; }
+      margin-top: -6px; }
     body input[type=range]:focus::-webkit-slider-runnable-track {
       background: #2E2E2E; }
     body input[type=range]::-moz-range-track {
-      width: auto;
-      height: 8px;
+      width: 300px;
+      height: 5px;
       cursor: pointer;
       animate: 0.2s;
       box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13, 13, 13, 0);
@@ -52,8 +52,8 @@ body {
       background: fuchsia;
       cursor: pointer; }
     body input[type=range]::-ms-track {
-      width: auto;
-      height: 8px;
+      width: 300px;
+      height: 5px;
       cursor: pointer;
       animate: 0.2s;
       background: transparent;
