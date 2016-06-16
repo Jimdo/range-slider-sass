@@ -1,0 +1,84 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: #404040; }
+  body input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: auto; }
+    body input[type=range]:focus {
+      outline: none; }
+    body input[type=range]::-webkit-slider-runnable-track {
+      width: auto;
+      height: 8px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13, 13, 13, 0);
+      background: #2E2E2E;
+      border-radius: 4px;
+      border: 1px solid black; }
+    body input[type=range]::-webkit-slider-thumb {
+      box-shadow: 0 0 1px transparent, 0px 0px 0 rgba(13, 13, 13, 0);
+      border: 0 solid black;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      background: fuchsia;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -4.5px; }
+    body input[type=range]:focus::-webkit-slider-runnable-track {
+      background: #2E2E2E; }
+    body input[type=range]::-moz-range-track {
+      width: auto;
+      height: 8px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13, 13, 13, 0);
+      background: #2E2E2E;
+      border-radius: 4px;
+      border: 1px solid black; }
+    body input[type=range]::-moz-range-thumb {
+      box-shadow: 0 0 1px transparent, 0px 0px 0 rgba(13, 13, 13, 0);
+      border: 0 solid black;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      background: fuchsia;
+      cursor: pointer; }
+    body input[type=range]::-ms-track {
+      width: auto;
+      height: 8px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      border-width: 15px 0;
+      color: transparent; }
+    body input[type=range]::-ms-fill-lower {
+      background: #2E2E2E;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13, 13, 13, 0); }
+    body input[type=range]::-ms-fill-upper {
+      background: #2E2E2E;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-shadow: 2px 2px 2px transparent, 0px 0px 2px rgba(13, 13, 13, 0); }
+    body input[type=range]::-ms-thumb {
+      box-shadow: 0 0 1px transparent, 0px 0px 0 rgba(13, 13, 13, 0);
+      border: 0 solid black;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      background: fuchsia;
+      cursor: pointer; }
+    body input[type=range]:focus::-ms-fill-lower {
+      background: #2E2E2E; }
+    body input[type=range]:focus::-ms-fill-upper {
+      background: #2E2E2E; }

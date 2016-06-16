@@ -26,10 +26,10 @@ You need node & npm for this, if you don't have it just follow the steps [here](
 ####Throw this at your console
 
     $ npm install
-    $ webpack-dev-server
+    $ gulp demo
     
 
-http://localhost:8080/webpack-dev-server/ is the place to go after that.
+http://localhost:8000 is the place to go after that.
 
 
 ##Contributing
