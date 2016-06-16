@@ -20,7 +20,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./*.sass', ['sass']);
+  gulp.watch('./demo.sass', ['sass']);
 });
 
 
