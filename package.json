@@ -12,15 +12,8 @@
   },
   "devDependencies": {
     "bower": "^1.4.1",
-    "css-loader": "^0.10.1",
     "gulp-sass": "^2.3.2",
-    "gulp-webserver": "^0.9.1",
-    "json-loader": "^0.5.2",
-    "node-libs-browser": "^0.5.2",
-    "sass-loader": "^0.6.0",
-    "style-loader": "^0.10.2",
-    "webpack": "^1.10.0",
-    "webpack-dev-server": "^1.10.1"
+    "gulp-webserver": "^0.9.1"
   },
   "keywords": [
     "sass",
