@@ -1,0 +1,116 @@
+// The draghandle
+$thumb-color: #0097f2 !default;
+$thumb-radius: 100% !default;
+$thumb-height: 15px !default;
+$thumb-width: 15px !default;
+$thumb-border-width: 0 !default;
+$thumb-border-color: #000 !default;
+$thumb-shadow-size: 0 !default;
+$thumb-shadow-blur: 1px !default;
+$thumb-shadow-color: rgba(0, 0, 0, 0) !default;
+
+// The range
+$track-color: #2e2e2e !default;
+$track-radius: 4px !default;
+$track-width: auto !default;
+$track-height: 8px !default;
+$track-border-width: 1px !default;
+$track-border-color: #000 !default;
+$track-shadow-size: 2px !default;
+$track-shadow-blur: 2px !default;
+$track-shadow-color: rgba(0, 0, 0, 0) !default;
+
+@mixin shadow($shadow-size, $shadow-blur, $shadow-color) {
+  box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0 0 $shadow-size lighten($shadow-color, 5%);
+}
+
+@mixin track {
+  width: $track-width;
+  height: $track-height;
+  cursor: pointer;
+  animation: 0.2s;
+}
+
+@mixin thumb {
+  @include shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color);
+  width: $thumb-width;
+  height: $thumb-height;
+  cursor: pointer;
+  border: $thumb-border-width solid $thumb-border-color;
+  border-radius: $thumb-radius;
+  background: $thumb-color;
+}
+
+@mixin input-type-range {
+  -webkit-appearance: none;
+  width: $track-width;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include track;
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius;
+    background: $track-color;
+  }
+
+  &::-webkit-slider-thumb {
+    @include thumb;
+    -webkit-appearance: none;
+    margin-top: ((-#{$track-border-width} * 2) + $track-height) / (2 - $thumb-height / 2);
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: $track-color;
+  }
+
+  &::-moz-range-track {
+    @include track;
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius;
+    background: $track-color;
+  }
+
+  &::-moz-range-thumb {
+    @include thumb;
+  }
+
+  &::-ms-track {
+    @include track;
+    color: transparent;
+    border-width: $thumb-width 0;
+    border-color: transparent;
+    background: transparent;
+  }
+
+  &::-ms-fill-lower {
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius * 2;
+    background: $track-color;
+  }
+
+  &::-ms-fill-upper {
+    @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+    border: $track-border-width solid $track-border-color;
+    border-radius: $track-radius * 2;
+    background: $track-color;
+  }
+
+  &::-ms-thumb {
+    @include thumb;
+  }
+
+  &:focus::-ms-fill-lower {
+    background: $track-color;
+  }
+
+  &:focus::-ms-fill-upper {
+    background: $track-color;
+  }
+}
