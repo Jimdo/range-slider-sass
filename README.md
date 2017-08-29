@@ -1,15 +1,15 @@
-#Input type="range" sass mixin
+# Input type="range" sass mixin
 
 This is a sass snippet to style the beloved input type="range" a little easier.
 
 [demo](http://jimdo.github.io/range-slider-sass/)
 
-##Why
+## Why
 When it comes to styling an input[type="range"] the fix is not to vendor-prefix the properties but to vendor-prefix the selectors. 
 
 This snippet should provide an easier approach. 
 
-##How To 
+## How To 
 
 @include the range.sass in your project.
 
@@ -18,12 +18,12 @@ Adjust the variables to match your project.
 use the mixin "input-type-range" on your input[type=range]
 
 
-##Demo Setup
+## Demo Setup
 
 You need node & npm for this, if you don't have it just follow the steps [here](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
 
 
-####Throw this at your console
+#### Throw this at your console
 
     $ npm install
     $ gulp demo
@@ -32,11 +32,11 @@ You need node & npm for this, if you don't have it just follow the steps [here](
 http://localhost:8000 is the place to go after that.
 
 
-##Contributing
+## Contributing
 
 Issues and pull requests are absolutely welcome!
 
-##Credits
+## Credits
 
 When you like this please give [Daniel Stern](https://twitter.com/danieljackstern) a follow as he has done awesome things to improve range-css styling:
  * [range.css](https://github.com/danielstern/range.css)
@@ -44,7 +44,7 @@ When you like this please give [Daniel Stern](https://twitter.com/danieljackster
  * [neat range css generator](http://danielstern.ca/range.css/#/)
 
 
-##License
+## License
 
 > The MIT License
 > 
